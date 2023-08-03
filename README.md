@@ -11,7 +11,8 @@ Things you may want to cover:
 
 * Configuration rails 7.0.6
 ![預約](https://github.com/tsaitsaiji/reservation/assets/85061424/ba9a8a25-e317-4b77-97f1-12bf5a2d8bee)
-![check](https://github.com/tsaitsaiji/reservation/assets/85061424/a7ebb280-2490-4ce7-8a92-bf2fc8ef674d)
+![預約](https://github.com/tsaitsaiji/reservation/assets/85061424/401c79e0-50bb-4000-9d99-43681d658680)
+
 ![管理者](https://github.com/tsaitsaiji/reservation/assets/85061424/5fdd801e-d24c-435b-9292-4559bd8ff69c)
 
 下在後終端機輸入 rails server即可

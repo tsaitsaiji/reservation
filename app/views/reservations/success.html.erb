@@ -1,0 +1,8 @@
+<div class="container mt-5 text-center">
+  <h2>預約成功！</h2>
+  <p>您的預約資訊如下：</p>
+  <p>姓名：<%= @reservation.name %></p>
+  <p>手機：<%= @reservation.phone %></p>
+  <p>時段：<%= @reservation.date.strftime('%Y-%m-%d') %> <%= @reservation.time.strftime('%H:%M') %></p>
+  <%= link_to "Back", :back %>
+</div>

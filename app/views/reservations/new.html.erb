@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h2 class="text-center">預約系統</h2>
+  <%= form_with model: @reservation, url: reservations_path do |form| %>
+    <div class="mb-3">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :phone %>
+      <%= form.text_field :phone, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :date %>
+      <%= form.date_field :date, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :time %>
+      <%= form.time_field :time, class: "form-control" %>
+    </div>
+    <%= form.submit "預約", class: "btn btn-success" %>
+  <% end %>
+</div>

@@ -1,0 +1,29 @@
+<!-- app/views/reservations/check.html.erb -->
+<div class="container mt-5">
+  <h2 class="text-center">預約資訊確認</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>手機</th>
+        <th>日期</th>
+        <th>時間</th>
+        <th>刪除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @reservations.each do |reservation| %>
+        <tr>
+          <td><%= reservation.name %></td>
+          <td><%= reservation.phone %></td>
+          <td><%= reservation.date.strftime('%Y-%m-%d') %></td>
+          <td><%= reservation.time.strftime('%H:%M') %></td>
+          <td>
+            <%= link_to "刪除", reservation_destroy_path(reservation), method: :delete, data: { confirm: "確定要刪除這筆預約嗎？" }, class: "btn btn-danger btn-sm" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
